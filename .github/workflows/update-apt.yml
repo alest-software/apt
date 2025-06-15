@@ -33,10 +33,12 @@ jobs:
           done
 
       - name: Commit and push updated metadata
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.TOKEN }}@github.com/alest-software/apt.git
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/alest-software/apt.git
           git add dists/**/binary-*/*
           git commit -m "Auto-update APT repo metadata" || echo "No changes to commit"
-          git push
+          git push origin HEAD:${{ github.ref_name }}
