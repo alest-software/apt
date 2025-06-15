@@ -38,6 +38,6 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          \git add dists/**/binary-*/*
+          git add dists/**/binary-*/*
           git commit -m "Auto-update APT repo metadata" || echo "No changes to commit"
           git push
