@@ -9,12 +9,15 @@ on:
 jobs:
   update-repo:
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.TOKEN }}
+        #with:
+        #  token: ${{ secrets.TOKEN }}
 
       - name: Install dpkg-dev and apt-utils
         run: |
