@@ -6,9 +6,6 @@ on:
       - 'dists/**/binary-*/**.deb'
   workflow_dispatch:
 
-env:
-  GITHUB_TOKEN: ${{ secrets.TOKEN }}
-
 jobs:
   update-repo:
     runs-on: ubuntu-latest
@@ -39,6 +36,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.TOKEN }}@github.com/apt.git
           git add dists/**/binary-*/*
           git commit -m "Auto-update APT repo metadata" || echo "No changes to commit"
           git push
