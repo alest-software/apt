@@ -1,0 +1,31 @@
+Package: eclipse-cyclone-dds
+Version: 0.11.0
+Architecture: amd64
+Maintainer: https://github.com/eclipse-cyclonedds/cyclonedds
+Installed-Size: 26753
+Filename: ./eclipse-cyclone-dds_0.11.0_amd64.deb
+Size: 4514052
+MD5sum: 62d7e1042adbda13534120094d4ea9b4
+SHA1: f22c438b634f241ada306280fa42db012980d225
+SHA256: d25543e7f923347efd4e3f588dc2de3b798d8c0ee21ec11f4a157ba7de063fe6
+Section: devel
+Priority: optional
+Description: Eclipse Cyclone DDS
+ Library used to run programs with Eclipse Cyclone DDS
+
+Package: eclipse-cyclone-dds-dev
+Version: 0.11.0
+Architecture: amd64
+Maintainer: https://github.com/eclipse-cyclonedds/cyclonedds
+Installed-Size: 2159
+Depends: eclipse-cyclone-dds (= 0.11.0), libc6 (>= 2.23)
+Filename: ./eclipse-cyclone-dds-dev_0.11.0_amd64.deb
+Size: 600440
+MD5sum: bee562cf7e53f6d8978ba8295d55da90
+SHA1: 05ea7c8d650f2bad0b1f2d6e80d0e184e0876a79
+SHA256: b76c6585007d723d13f25bcb3995a74c85f343b817dde4cb5bcdf8121441aaef
+Section: devel
+Priority: optional
+Description: Eclipse Cyclone DDS
+ Development files for use with Eclipse Cyclone DDS
+
