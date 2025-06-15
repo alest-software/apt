@@ -1,0 +1,40 @@
+name: Update APT Repository
+
+on:
+  push:
+    paths:
+      - 'dists/**/binary-*/**.deb'
+
+jobs:
+  update-repo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dpkg-dev and apt-utils
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y dpkg-dev apt-utils
+
+      - name: Scan and update all packages
+        run: |
+          find dists -type d -name "binary-*" | while read arch_dir; do
+            echo "Processing $arch_dir"
+            cd "$arch_dir"
+
+            dpkg-scanpackages . /dev/null > Packages
+            gzip -kf Packages
+            apt-ftparchive release . > Release
+
+            cd - > /dev/null
+          done
+
+      - name: Commit and push updated metadata
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add dists/**/binary-*/*
+          git commit -m "Auto-update APT repo metadata" || echo "No changes to commit"
+          git push
