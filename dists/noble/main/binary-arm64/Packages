@@ -1,0 +1,31 @@
+Package: eclipse-cyclone-dds
+Version: 0.11.0
+Architecture: arm64
+Maintainer: https://github.com/eclipse-cyclonedds/cyclonedds
+Installed-Size: 27254
+Filename: dists/noble/main/binary-arm64/./eclipse-cyclone-dds_0.11.0_arm64.deb
+Size: 4507224
+MD5sum: ab78a696e16726dbd807173781b8ba17
+SHA1: 80b399b27d7752ad445fccde0207f8b4e3c0afdf
+SHA256: 4a7e9cfaab4c2f4ca62d41ed9f2d8cddc30e5f3748f173f36ef671bec39f4b01
+Section: devel
+Priority: optional
+Description: Eclipse Cyclone DDS
+ Library used to run programs with Eclipse Cyclone DDS
+
+Package: eclipse-cyclone-dds-dev
+Version: 0.11.0
+Architecture: arm64
+Maintainer: https://github.com/eclipse-cyclonedds/cyclonedds
+Installed-Size: 2245
+Depends: eclipse-cyclone-dds (= 0.11.0), libc6 (>= 2.23)
+Filename: dists/noble/main/binary-arm64/./eclipse-cyclone-dds-dev_0.11.0_arm64.deb
+Size: 598030
+MD5sum: 14c2334f64fd89576852675bc2b69b3c
+SHA1: 9588126359046c1aedf98977c8263f41d5de9580
+SHA256: 023996e8c95e70d6b64d4c491a2b6a4ebc72826b46f916fe3959fa370bb8be83
+Section: devel
+Priority: optional
+Description: Eclipse Cyclone DDS
+ Development files for use with Eclipse Cyclone DDS
+

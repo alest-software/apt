@@ -2,12 +2,12 @@ Package: eclipse-cyclone-dds
 Version: 0.11.0
 Architecture: amd64
 Maintainer: https://github.com/eclipse-cyclonedds/cyclonedds
-Installed-Size: 26753
+Installed-Size: 26749
 Filename: dists/noble/main/binary-amd64/./eclipse-cyclone-dds_0.11.0_amd64.deb
-Size: 4514050
-MD5sum: 90a255c7489085272ca71b29eec120be
-SHA1: 392e74d69b6fcba0fe51eb2b3027afe9dbecc616
-SHA256: c0ccfcf470626b7fdec7ac9eb24383a55460712141295c067f5518cc0f27fa23
+Size: 4513922
+MD5sum: fdf5151a8d13f5c68571443e4729d997
+SHA1: 3c749bddf2df99b57ae5969dec554f5e412eb7e0
+SHA256: 8277df76a32e4a13b349c67232b737614fef53aaa3c44ffd1c15f9a263a3da45
 Section: devel
 Priority: optional
 Description: Eclipse Cyclone DDS
@@ -17,13 +17,13 @@ Package: eclipse-cyclone-dds-dev
 Version: 0.11.0
 Architecture: amd64
 Maintainer: https://github.com/eclipse-cyclonedds/cyclonedds
-Installed-Size: 2159
+Installed-Size: 2155
 Depends: eclipse-cyclone-dds (= 0.11.0), libc6 (>= 2.23)
 Filename: dists/noble/main/binary-amd64/./eclipse-cyclone-dds-dev_0.11.0_amd64.deb
-Size: 600436
-MD5sum: 53d0bf890e432ed79b1b4bd263227aa2
-SHA1: 5a0602d2fcb73ffff942a3aeca347b8ce2e43014
-SHA256: 350db55b10054826b0d87e4b12734867cfbb77cc1c5fc5121e92345e7a2bdafe
+Size: 600338
+MD5sum: d09406c4e593d62d5e0d3d5fd48a718e
+SHA1: 8048cedb466da045dc74eb8b55cc0fc797c6ff41
+SHA256: ba48e5203f1b149bb88d0c8fbbb04844b809ab6aa31f6d504f77d95e659c8f8f
 Section: devel
 Priority: optional
 Description: Eclipse Cyclone DDS
