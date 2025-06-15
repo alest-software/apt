@@ -27,7 +27,7 @@ jobs:
             echo "Processing $arch_dir"
             cd "$arch_dir"
 
-            dpkg-scanpackages . /dev/null $arch_dir > Packages
+            dpkg-scanpackages . /dev/null ${arch_dir}/ > Packages
             gzip -kf Packages
             apt-ftparchive release . > Release
 
