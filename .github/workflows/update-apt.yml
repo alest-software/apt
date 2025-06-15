@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'dists/**/binary-*/**.deb'
+  workflow_dispatch:
 
 jobs:
   update-repo:
