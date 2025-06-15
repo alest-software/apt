@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.TOKEN }}
 
       - name: Install dpkg-dev and apt-utils
         run: |
@@ -33,13 +35,9 @@ jobs:
           done
 
       - name: Commit and push updated metadata
-        env:
-          GH_PAT: ${{ secrets.TOKEN }}
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}
-          git remote -v
-          git add dists/**/binary-*/*
+          \git add dists/**/binary-*/*
           git commit -m "Auto-update APT repo metadata" || echo "No changes to commit"
-          git push origin HEAD:${{ github.ref_name }}
+          git push
