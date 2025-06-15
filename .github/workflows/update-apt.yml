@@ -6,6 +6,9 @@ on:
       - 'dists/**/binary-*/**.deb'
   workflow_dispatch:
 
+env:
+  GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
 jobs:
   update-repo:
     runs-on: ubuntu-latest
