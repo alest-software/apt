@@ -4,10 +4,10 @@ Architecture: arm64
 Maintainer: https://github.com/eclipse-cyclonedds/cyclonedds
 Installed-Size: 26899
 Filename: dists/jammy/main/binary-arm64/./eclipse-cyclone-dds_0.11.0_arm64.deb
-Size: 4522970
-MD5sum: e7672ad424836b58283e696b5b5c569d
-SHA1: ec08fa742273c4bc43d15e0a59981447c051e917
-SHA256: 4a48e5e9ad3aea83d00a384f18505e6e244e5fc635d2750d0db915fad4524aa0
+Size: 4522982
+MD5sum: d51142e808c1df2906197718fe55a496
+SHA1: f99d3ae23d683b822e401fec325874fa65882587
+SHA256: a0897c0e5adb633c12f3ee6c33b467f64b6801dbbb238681246b11f96994fbd8
 Section: devel
 Priority: optional
 Description: Eclipse Cyclone DDS
@@ -20,10 +20,10 @@ Maintainer: https://github.com/eclipse-cyclonedds/cyclonedds
 Installed-Size: 2139
 Depends: eclipse-cyclone-dds (= 0.11.0), libc6 (>= 2.23)
 Filename: dists/jammy/main/binary-arm64/./eclipse-cyclone-dds-dev_0.11.0_arm64.deb
-Size: 591904
-MD5sum: 0e28e191edae74e3481868e87aba8be8
-SHA1: 33f9d1820428f3a51873cc07baeaa078c0dc81cd
-SHA256: 47ccac6fd93daa547ef2790f60e6d712f8a60f553eba56e799e0ef729fff7fa3
+Size: 591910
+MD5sum: b0fea879ff1caba3c9fe24c8ca489e10
+SHA1: 97a75fb2dd3166cf0f63ed4185300c7cc841f58f
+SHA256: b7367f98073a979583e256056a787d80cb1fb12ebf0d81af8b9e921fd8325b77
 Section: devel
 Priority: optional
 Description: Eclipse Cyclone DDS
